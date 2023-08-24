@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Puebliando1</string>
+    <string name="resenahoteles">
+       Avrai un tour per guatape partenze da medellin, festa in barca, cibo e molti altri contatti
+         scopri la citta piu emblematica di Antioquia e acquista untur a guatape e sarai felice del meraviglioso
+         paesaggi accompagnati da un imponente roccia e godere di attivita acquatiche
+         SPERIAMO DI VEDERTI
+    </string>
+    <string name="resenarestaurantes">
+        In guatape you will find many areas or places with restaurants with delicious food such as:
+        the delicious bandeja paisa with white rice, chicharron, blood sausage, chorizo, egg, patacon, avocado, slices, beans and ground meat.
+        Another delicious food that you will find is the delicious arepa stuffed with shredded meat, guacamole, maduro, mozarella cheese, chicken among other seasonings.
+        Another delicious food that you will find in this case is the pionono Dessert made with pastry dough, which is filled and rolled to decorate.
+    </string>
+    <string name="resenasitiosturisticos">
+Questo tour, sebbene si chiami Tour to Guatape, puo anche essere chiamato Tour Piedra del Peñol, poiche visitiamo questi 2 luoghi, non solo la bellissima e colorata citta
+          anche la grande Piedra del Peñol.
+         PIETRA DEL PEÑOL.
+     Goditi un esperienza indimenticabile mentre sali su La Piedra, una delle strutture monolitiche piu alte del mondo. Situato nella regione di Guatape, questo sito unico e una sfida da conquistare e ti fara sentire un piccolo essere umano. Scendi in soggezione e scopri le migliori viste del Sud America mentre impari la storia dietro a tutto.
+     DIGA
+     Questo sara un tour affascinante che ti piacera. Puoi incontrare un bellissimo lago creato dall uomo, in realta e una diga. Parlando un po  di storia  Antioquia aveva una fonte per fornire energia, ma la domanda di elettricita del paese richiedeva di piu.
+     La diga di Guatape e stata realizzata per creare un interconnessione con gli altri bacini della Colombia e coprire cosi il fabbisogno dell intero territorio. Tra l aprile 1978 e il maggio 1979, gli sgomberi e l immediata demolizione delle case hanno fatto parte della vita quotidiana nella citta di Old Peñol, finche alla fine tutti sono stati trasferiti in quella che oggi e conosciuta come la citta di Nuevo Peñol.
+     Il progetto del bacino idrico di Guatape e stimato in 45 milioni di dollari, che per l epoca era una cifra impressionante.
+     GENTE DI GUATAPE
+     Guatape e un comune o paese colombiano che si trova nel dipartimento di Antioquia, lo troviamo a due ore dalla citta di Medellín.
+     Questo comune e famoso in tutto il mondo per essere la casa di una meraviglia naturale chiamata Piedra del Peñol, per la sua diga artificiale e anche per tutto il colore che si trova all interno della citta nei suoi Zocalos.
+     Possiamo dire che gli zocalos sono opere artistiche, per lo piu in 3D che si trovano nella parte bassa delle case della citta di Guatape.</string>
+
+    <string name="resenapersonal">
+   Ciao, mi chiamo Steven Arango Velasquez. Attualmente sto facendo la tecnica di sviluppo del software,
+         Sto facendo un corso di Javascript e inglese, mi piace molto tutto cio che e legato alla tecnologia,
+         Mi piace disegnare e tutto cio che riguarda l architettura,
+     I like drawing and everything related to architecture</string>
+    <string name="opcion1">Inglese</string>
+    <string name="opcion2">spagnolo</string>
+    <string name="opcion3">Italiano</string>
+    <string name="opcion4">Di</string>
+
+    <string name="usuario">utente</string>
+    <string name="contrasena">parola dordine</string>
+    <string name="ingresar">entrare dentro</string>
+    <string name="hoteles">Alberghi</string>
+    <string name="restaurantes">ristoranti</string>
+    <string name="sitiosTuristicos">siti turistici</string>
+    <string name="vermas">Vedi altro</string>
+    <string name="Bienevenido">Benvenuto</string>
+    <string name="contacto"> contatto </string>
+</resources>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Puebliando1</string>
+    <string name="resenahoteles">
+       Tendras un tur a guatape salidas desde medellin,barco rumbero,alimentacion y muchos mas contactos.
+        descubre el pueblo mas emblematico de antioquia y compra untur a guatape y seras feliz con los maravillosos
+        paisajes,acompañados de una roca imponente y disfrutar de actividades acuaticas.
+        VEN TE ESPERAMOS
+    </string>
+    <string name="resenarestaurantes">
+        En guatape te encontraras muchas zonas o lugares con restaurantes con comida deliciosa como:
+        la deliciosa bandeja paisa con arroz blanco,chicharron,morcilla,chorizo,huevo,patacon,aguacate,tajadas,frijoles y carne molida.
+        Otro deliciosa comida que encontraras es la  deliciosa arepa rellena con carne desmechada,guacamole,maduro,queso mozarella,pollo entre otros condimentos.
+        Otra delicioso comida que encotraras es en este caso  es el pionono Postre elaborado con masa de repostería, el cual se rellena y enrolla para decorarse.
+    </string>
+    <string name="resenasitiosturisticos">
+        Este tour aunque es llamado Tour a Guatapé también puede ser llamado Tour Piedra del Peñol, ya que visitamos estos 2 lugares, no solo el hermoso y colorido pueblo
+         también la grandiosa Piedra del Peñol.
+        PIEDRA DEL PEÑOL.
+    Disfruta de una experiencia inolvidable mientras subes a La Piedra una de las estructuras monolíticas más altas del mundo. Ubicado en la región de Guatapé, este sitio único es un desafío a conquistar y te hará sentir como un pequeño ser humano. Descienda con asombro y descubra las mejores vistas de América del Sur mientras aprende la historia detrás de todo.
+    REPRESA
+    Este será un recorrido fascinante que podrá disfrutar. Puedes conocer un hermoso lago creado por el hombre, en realidad es una represa. Hablando un poco de historia; Antioquia tenía una fuente para abastecer de energía, pero la demanda de energía eléctrica del país necesitaba más.
+    La represa de Guatapé fue construida para crear una interconexión con los demás embalses de Colombia y así cubrir las necesidades de todo el territorio”. Entre abril del año de 1978 y mayo de 1979, los desalojos y su inmediata demolición de viviendas fueron parte de la vida cotidiana del pueblo del viejo Peñol, hasta que finalmente todos fueron reubicados a lo que hoy se conoce como el pueblo del nuevo peñol.
+    El proyecto del embalse de guatapé se estima en 45 millones de dólares, lo que para la época era una cantidad impresionante.
+    PUEBLO DE GUATAPE
+    Guatapé es un municipio o pueblo colombiano que se encuentra ubicado en el departamento de Antioquia, lo encontramos a dos horas de la ciudad de Medellín.
+    Este municipio es famoso mundialmente por ser el hogar de una maravilla natural llamada la Piedra del Peñol, por su represa artificial y también por todo el colorido que se encuentra dentro del pueblo en sus Zócalos.
+    Podemos decir que los zócalos son obras artísticas, en su mayoría en 3D que están en la parte inferior de las viviendas del pueblo de Guatapé.
+    </string>
+
+    <string name="resenapersonal">
+    Hola mi nombre es steven arango velasquez actualmente estoy haciendo la tecnica de desarollo de software,
+        estoy haciendo un curso de javascript y de ingles megusta mucho todo lo que esta relacionado con la tecnologia,
+        me gusta el dibujo y lo relacionado a la arquiyectura
+
+    </string>
+
+    <string name="opcion1">Ingles</string>
+    <string name="opcion2">Español</string>
+    <string name="opcion3">Italiano</string>
+    <string name="opcion4">Acerca de</string>
+
+    <string name="usuario">nombre</string>
+    <string name="contrasena">contraseña</string>
+    <string name="ingresar">ingresar</string>
+    <string name="hoteles">hoteles</string>
+    <string name="restaurantes">restaurantes</string>
+    <string name="sitiosTuristicos">turismo</string>
+    <string name="vermas">vermas</string>
+    <string name="Bienevenido">Bienevenido</string>
+    <string name="contacto"> contacto </string>
+
+</resources>

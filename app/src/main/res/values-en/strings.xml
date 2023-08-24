@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Puebliando1</string>
+    <string name="resenahoteles">
+        You will have a tour to guatape departures from medellin, party boat, food and many more contacts.
+        discover the most emblematic town of antioquia and buy untur a guatape and you will be happy with the wonderful
+        landscapes, accompanied by an imposing rock and enjoy water activities.
+        WE HOPE TO SEE YOU
+    </string>
+    <string name="resenarestaurantes">
+       In guatape troverai molte aree o luoghi con ristoranti con cibo delizioso come
+         la deliziosa bandeja paisa con riso bianco, chicharron, sanguinaccio, chorizo, uovo, patacon, avocado, fette, fagioli e carne macinata
+         Un altro cibo delizioso che troverai e la deliziosa arepa ripiena di carne tritata guacamole, maduro mozzarella pollo tra gli altri condimenti
+         Un altro alimento delizioso che troverete in questo caso e il dolce pionono fatto con pasta frolla che viene farcita e arrotolata per decorare
+    </string>
+    <string name="resenasitiosturisticos">
+This tour, although it is called Tour to Guatapé, can also be called Tour Piedra del Peñol, since we visit these 2 places, not only the beautiful and colorful town
+     also the great Piedra del Peñol.
+    PEÑOL STONE.
+Enjoy an unforgettable experience as you climb "La Piedra", one of the tallest monolithic structures in the world. Located in the Guatapé region, this unique site is a challenge to conquer and will make you feel like a little human being. Descend in awe and discover the best views of South America while learning the history behind it all.
+DAM
+This will be a fascinating tour that you will enjoy. You can meet a beautiful lake created by man, it is actually a dam. Speaking a bit of history; Antioquia had a source to supply energy, but the countrys demand for electricity needed more.
+The Guatapé dam was built to create an interconnection with the other reservoirs in Colombia and thus cover the needs of the entire territory. Between April 1978 and May 1979, evictions and their immediate demolition of houses were part of daily life in the town of Old Peñol, until finally all of them were relocated to what is now known as the town of Nuevo Peñol.
+The Guatapé reservoir project is estimated at 45 million dollars, which for the time was an impressive amount.
+PEOPLE OF GUATAPE
+Guatapé is a Colombian municipality or town that is located in the department of Antioquia, we find it two hours from the city of Medellín.
+This municipality is famous worldwide for being the home of a natural wonder called the Piedra del Peñol, for its artificial dam and also for all the color that is found within the town in its Zócalos.
+We can say that the zócalos are artistic works, mostly in 3D that are in the lower part of the houses of the town of Guatapé.
+</string>
+    <string name="resenapersonal">
+  Hello, my name is Steven Arango Velasquez. I am currently doing the software development technique,
+     I am doing a Javascript and English course, I really like everything that is related to technology,
+     I like drawing and everything related to architecture </string>
+
+    <string name="opcion1">English</string>
+    <string name="opcion2">Spanish</string>
+    <string name="opcion3">Italian</string>
+    <string name="opcion4">About us</string>
+
+    <string name="usuario">name</string>
+    <string name="contrasena">password</string>
+    <string name="ingresar">get into</string>
+    <string name="hoteles">hotels</string>
+    <string name="restaurantes">restaurants</string>
+    <string name="sitiosTuristicos">tourist sites</string>
+    <string name="vermas">see more</string>
+    <string name="Bienevenido">welcome</string>
+    <string name="contacto"> contact </string>
+</resources>

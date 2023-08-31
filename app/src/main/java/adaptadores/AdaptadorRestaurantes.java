@@ -1,5 +1,6 @@
 package adaptadores;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.puebliando1.AmpliandoRestaurantes;
 import com.example.puebliando1.R;
 import com.example.puebliando1.moldes.MoldeRestaurantes;
 
@@ -16,9 +18,6 @@ import java.util.ArrayList;
 public class AdaptadorRestaurantes  extends RecyclerView.Adapter <AdaptadorRestaurantes.viewHolder>{
 
     public ArrayList<MoldeRestaurantes> listaRestaurantes;
-
-    public AdaptadorRestaurantes() {
-    }
 
     public AdaptadorRestaurantes(ArrayList<MoldeRestaurantes> listaRestaurantes) {
         this.listaRestaurantes = listaRestaurantes;
@@ -68,6 +67,15 @@ public class AdaptadorRestaurantes  extends RecyclerView.Adapter <AdaptadorResta
             contactoRestaurante.setText(moldeRestaurantes.getTelefono());
             numeroRestaurante .setText(moldeRestaurantes.getTelefono());
             platoRecomendado .setText(moldeRestaurantes.getPlatoRecomendado());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoRestaurantes.class);
+                    intent.putExtra("datosrestaurantes",moldeRestaurantes);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

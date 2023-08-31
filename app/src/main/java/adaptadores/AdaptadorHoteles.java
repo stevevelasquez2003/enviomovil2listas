@@ -1,5 +1,6 @@
 package adaptadores;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.puebliando1.AmpliandoHotel;
 import com.example.puebliando1.R;
 import com.example.puebliando1.moldes.Moldehotel;
 
@@ -69,6 +71,15 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             nombreHotel.setText(moldehotel.getNombre());
             precioHotel.setText(moldehotel.getPrecio());
             contactoHotel.setText(moldehotel.getTelefono());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoHotel.class);
+                    intent.putExtra("datoshotel",moldehotel);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
     }
 }

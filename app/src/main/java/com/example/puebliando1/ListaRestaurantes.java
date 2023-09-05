@@ -29,12 +29,12 @@ public class ListaRestaurantes extends AppCompatActivity {
     }
 
     private void llenarListaConDatos() {
-        listaRestaurantes.add(new MoldeRestaurantes("Al Carbón Parrilla Bar",R.drawable.restauranteuno,"325614495","150000","SOLOMITO BAÑADO EN SALSA DE LA CASA"));
-        listaRestaurantes.add(new MoldeRestaurantes("Casa de Cielo",R.drawable.restaurantedos,"312458475","250000","MARISCOS"));
-        listaRestaurantes.add(new MoldeRestaurantes("Placido Gourmet",R.drawable.restaurantetres,"215463248","190000","SALMON"));
-        listaRestaurantes.add(new MoldeRestaurantes("La Fiesta Espresso",R.drawable.restaurantecuatro,"332625234","155000","SUSHI"));
-        listaRestaurantes.add(new MoldeRestaurantes("Le Gros Luxe",R.drawable.restaurantecinco,"315425214","185000","TRUCHA EN SALSA DE UVAS"));
-        listaRestaurantes.add(new MoldeRestaurantes("Bella Grande Restaurant",R.drawable.restauranteseis,"214265324","150000","BANDEJA PAISA"));
+        listaRestaurantes.add(new MoldeRestaurantes("Al Carbón Parrilla Bar",R.drawable.restauranteuno,"325614495","$150000 COP","SOLOMITO "));
+        listaRestaurantes.add(new MoldeRestaurantes("Casa de Cielo",R.drawable.restaurantedos,"312458475","$250000 COP","MARISCOS"));
+        listaRestaurantes.add(new MoldeRestaurantes("Placido Gourmet",R.drawable.restaurantetres,"215463248","$190000 COP","SALMON"));
+        listaRestaurantes.add(new MoldeRestaurantes("La Fiesta Espresso",R.drawable.restaurantecuatro,"332625234"," $155000 COP ","SUSHI"));
+        listaRestaurantes.add(new MoldeRestaurantes("Le Gros Luxe",R.drawable.restaurantecinco,"315425214","185000","TRUCHA "));
+        listaRestaurantes.add(new MoldeRestaurantes("Bella Grande Restaurant",R.drawable.restauranteseis,"214265324","$150000 COP","Casuela de mariscos"));
 
 
     }

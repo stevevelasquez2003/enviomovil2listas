@@ -1,15 +1,14 @@
 package com.example.puebliando1.moldes;
 
-public class Moldeturismo {
+import java.io.Serializable;
+
+public class Moldeturismo implements Serializable {
     private String nombre;
     private String nombreContacto;
     private String telefono;
     private String precio;
     private Integer foto;
 
-    public Moldeturismo() {
-
-    }
 
     public Moldeturismo(String nombre, String nombreContacto, String telefono, String precio, Integer foto) {
         this.nombre = nombre;

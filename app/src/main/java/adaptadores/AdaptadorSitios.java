@@ -1,5 +1,6 @@
 package adaptadores;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.puebliando1.AmpliandoRestaurantes;
+import com.example.puebliando1.AmpliandoTurismo;
 import com.example.puebliando1.R;
 import com.example.puebliando1.moldes.Moldeturismo;
 
@@ -34,7 +37,7 @@ public class AdaptadorSitios  extends RecyclerView.Adapter <AdaptadorSitios.view
 
     @Override
     public void onBindViewHolder(@NonNull AdaptadorSitios.viewHolder holder, int position) {
-
+        holder.actualizarDatos(listasitiosturisticos.get(position));
     }
 
     @Override
@@ -71,6 +74,14 @@ public class AdaptadorSitios  extends RecyclerView.Adapter <AdaptadorSitios.view
             nunmerositios .setText(moldeturismo.getTelefono());
             nombrecontactositios .setText(moldeturismo.getNombreContacto());
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent =new Intent(itemView.getContext(), AmpliandoTurismo.class);
+                    intent.putExtra("datossitios",moldeturismo);
+                    itemView.getContext().startActivity(intent);
+                }
+            });
         }
     }
 

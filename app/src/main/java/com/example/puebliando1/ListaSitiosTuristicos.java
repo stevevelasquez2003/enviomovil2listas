@@ -28,10 +28,8 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
         recyclerView.setAdapter(adaptadorSitios);
     }
     private void llenarListaConDatos(){
-        listaturismo.add(new Moldeturismo("Replica Pueblo Guatape","steven","152436582","$100000", R.drawable.turismouno));
-        listaturismo.add(new Moldeturismo("Represa","ereqftr","213261254","$110000", R.drawable.turismodos));
-        listaturismo.add(new Moldeturismo("pueblo de los recuerdos","kdernh","216638772","$120000",R.drawable.turismocuatro));
-        listaturismo.add(new Moldeturismo("el pasillo","ewreretg","321638522","$130000",R.drawable.turismocinco));
-        listaturismo.add(new Moldeturismo("Pueblo Guatape","sttu6yuj","332256621","$140000",R.drawable.turismoseis));
+        listaturismo.add(new Moldeturismo("Replica Pueblo Guatape","steven","152436582","$100000",R.drawable.turismouno));
+        listaturismo.add(new Moldeturismo("Lozas de llamas","steven","152436582","$100000",R.drawable.turismodos));
+        listaturismo.add(new Moldeturismo("Represa El Peñol","steven","152436582","$100000",R.drawable.turismocuatro));
     }
 }

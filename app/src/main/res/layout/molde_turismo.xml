@@ -8,12 +8,17 @@
     app:cardCornerRadius="20dp"
     app:cardElevation="10dp"
     app:cardUseCompatPadding="true"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+
+
+    >
 
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        >
 
         <TextView
             android:id="@+id/nombreListaSitio"

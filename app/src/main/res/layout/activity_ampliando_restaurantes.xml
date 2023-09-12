@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.057" />
 
     <TextView
-        android:id="@+id/nombrehotelA"
+        android:id="@+id/nombreRestaurantesA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="nombre : Hotel La Rivera"
@@ -34,7 +34,7 @@
         />
 
     <TextView
-        android:id="@+id/preciohotelA"
+        android:id="@+id/precioRestauranteA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="precio: 180000"
@@ -47,7 +47,7 @@
 
         />
     <TextView
-        android:id="@+id/telefonohotelA"
+        android:id="@+id/telefonoRestauranteA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="telefono : 325164859"
@@ -61,7 +61,7 @@
         />
 
     <Button
-        android:id="@+id/botonhoteles"
+        android:id="@+id/botonRestaurantesA"
         android:layout_width="232dp"
         android:layout_height="41dp"
         android:layout_marginHorizontal="30dp"

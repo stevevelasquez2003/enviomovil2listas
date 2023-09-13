@@ -8,13 +8,36 @@ public class MoldeRestaurantes implements Serializable {
     private  String telefono;
     private  String rangoPrecio;
     private  String platoRecomendado;
+    private String comentario;
+    private  String valoracion;
 
-    public MoldeRestaurantes(String nombre, Integer foto, String telefono, String rangoPrecio, String platoRecomendado) {
+    public MoldeRestaurantes() {
+    }
+
+    public MoldeRestaurantes(String nombre, Integer foto, String telefono, String rangoPrecio, String platoRecomendado, String comentario, String valoracion) {
         this.nombre = nombre;
         this.foto = foto;
         this.telefono = telefono;
         this.rangoPrecio = rangoPrecio;
         this.platoRecomendado = platoRecomendado;
+        this.comentario = comentario;
+        this.valoracion = valoracion;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public String getValoracion() {
+        return valoracion;
+    }
+
+    public void setValoracion(String valoracion) {
+        this.valoracion = valoracion;
     }
 
     public String getNombre() {

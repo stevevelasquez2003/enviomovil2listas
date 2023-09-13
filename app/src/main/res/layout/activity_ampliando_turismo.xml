@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AmpliandoTurismo">
+    tools:context=".AmpliandoTurismo"
+    android:background="@drawable/turismoam">
 
 
     <ImageView
@@ -68,6 +69,7 @@
         android:layout_marginHorizontal="30dp"
         android:backgroundTint="@color/lightgreen"
         android:text="Reservar"
+        android:background="@drawable/botonredondo"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,5 +77,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagenAmpliandoT"
         app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor   ac dui. Donec nec egestas dolor, eget ultricies orci. Proin hendrerit magna eu consequat vehicula. Nunc euismod arcu nec ante elementum, ac dignissim massa viverra. Morbi rhoncus metus odio, dapibus imperdiet mauris ultricies id. Quisque bibendum turpis sit amet varius interdum. Duis metus nisi, auctor vehicula cursus eget, ornare scelerisque arcu. Maecenas eu nisl sit amet ipsum laoreet dapibus. Maecenas tempor eleifend congue."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagenAmpliandoT"
+        app:layout_constraintVertical_bias="0.471" />
 
 </android.support.constraint.ConstraintLayout>

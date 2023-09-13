@@ -29,12 +29,12 @@ public class ListaRestaurantes extends AppCompatActivity {
     }
 
     private void llenarListaConDatos() {
-        listaRestaurantes.add(new MoldeRestaurantes("Al Carbón Parrilla Bar",R.drawable.restauranteuno,"325614495","$150000 COP","SOLOMITO "));
-        listaRestaurantes.add(new MoldeRestaurantes("Casa de Cielo",R.drawable.restaurantedos,"312458475","$250000 COP","MARISCOS"));
-        listaRestaurantes.add(new MoldeRestaurantes("Placido Gourmet",R.drawable.restaurantetres,"215463248","$190000 COP","SALMON"));
-        listaRestaurantes.add(new MoldeRestaurantes("La Fiesta Espresso",R.drawable.restaurantecuatro,"332625234"," $155000 COP ","SUSHI"));
-        listaRestaurantes.add(new MoldeRestaurantes("Le Gros Luxe",R.drawable.restaurantecinco,"315425214","185000","TRUCHA "));
-        listaRestaurantes.add(new MoldeRestaurantes("Bella Grande Restaurant",R.drawable.restauranteseis,"214265324","$150000 COP","Casuela de mariscos"));
+        listaRestaurantes.add(new MoldeRestaurantes("Al Carbón Parrilla Bar",R.drawable.restauranteuno,"325614495","$150000 COP","SOLOMITO ","exelente servicio y comida de exelente calidad","5.0"));
+        listaRestaurantes.add(new MoldeRestaurantes("Casa de Cielo",R.drawable.restaurantedos,"312458475","$250000 COP","MARISCOS","exelente servicio y comida de exelente calidad","4.0"));
+        listaRestaurantes.add(new MoldeRestaurantes("Placido Gourmet",R.drawable.restaurantetres,"215463248","$190000 COP","SALMON","exelente servicio y comida de exelente calidad","4.5"));
+        listaRestaurantes.add(new MoldeRestaurantes("La Fiesta Espresso",R.drawable.restaurantecuatro,"332625234"," $155000 COP ","SUSHI","exelente servicio y comida de exelente calidad","3.0"));
+        listaRestaurantes.add(new MoldeRestaurantes("Le Gros Luxe",R.drawable.restaurantecinco,"315425214","185000","TRUCHA ","exelente servicio y comida de exelente calidad","3.5"));
+        listaRestaurantes.add(new MoldeRestaurantes("Bella Grande Restaurant",R.drawable.restauranteseis,"214265324","$150000 COP","Casuela de mariscos","exelente servicio y comida de exelente calidad","5.0"));
 
 
     }

@@ -1,5 +1,6 @@
 package com.example.puebliando1;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -13,6 +14,9 @@ public class AmpliandoRestaurantes extends AppCompatActivity {
     TextView nombreAmpliandoRestaurantes;
     TextView precioAmpliandoRestaurantes;
     TextView telefonoAmpliandoRestaurantes;
+    TextView comentario;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +26,7 @@ public class AmpliandoRestaurantes extends AppCompatActivity {
         nombreAmpliandoRestaurantes = findViewById(R.id.nombreRestaurantesA);
         precioAmpliandoRestaurantes = findViewById(R.id.precioRestauranteA);
         telefonoAmpliandoRestaurantes = findViewById(R.id.telefonoRestauranteA);
+        comentario = findViewById(R.id.comentario);
 
         moldeRestaurantes = (MoldeRestaurantes)getIntent().getSerializableExtra("datosrestaurantes");
 
@@ -29,5 +34,6 @@ public class AmpliandoRestaurantes extends AppCompatActivity {
         nombreAmpliandoRestaurantes.setText(moldeRestaurantes.getNombre());
         precioAmpliandoRestaurantes.setText(moldeRestaurantes.getRangoPrecio());
         telefonoAmpliandoRestaurantes.setText(moldeRestaurantes.getTelefono());
+        comentario.setText(moldeRestaurantes.getComentario());
     }
 }

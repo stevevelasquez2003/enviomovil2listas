@@ -14,6 +14,8 @@ public class AmpliandoTurismo extends AppCompatActivity {
         TextView nombreAmpliandoTurismo;
         TextView precioAmpliandoTurismo;
         TextView telefonoAmpliandoTurismo;
+        TextView comentario;
+        TextView valoracion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

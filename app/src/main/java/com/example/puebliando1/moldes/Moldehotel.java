@@ -10,11 +10,12 @@ public class Moldehotel implements Serializable {
    private String descripcion;
    private String valoracion;
    private Integer fotoadicional;
+   private Integer imagen;
 
    public Moldehotel() {
    }
 
-   public Moldehotel(String nombre, String precio, String telefono, Integer foto, String descripcion, String valoracion, Integer fotoadicional) {
+   public Moldehotel(String nombre, String precio, String telefono, Integer foto, String descripcion, String valoracion, Integer fotoadicional, Integer imagen) {
       this.nombre = nombre;
       this.precio = precio;
       this.telefono = telefono;
@@ -22,7 +23,15 @@ public class Moldehotel implements Serializable {
       this.descripcion = descripcion;
       this.valoracion = valoracion;
       this.fotoadicional = fotoadicional;
+      this.imagen = imagen;
+   }
 
+   public Integer getImagen() {
+      return imagen;
+   }
+
+   public void setImagen(Integer imagen) {
+      this.imagen = imagen;
    }
 
    public String getValoracion() {

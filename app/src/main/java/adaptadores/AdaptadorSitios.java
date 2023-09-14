@@ -53,6 +53,7 @@ public class AdaptadorSitios  extends RecyclerView.Adapter <AdaptadorSitios.view
     TextView contactositio;
     TextView nombrecontactositios;
 
+
     public class viewHolder extends RecyclerView.ViewHolder {
         public viewHolder(@NonNull View itemView) {
             super(itemView);

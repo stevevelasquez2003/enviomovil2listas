@@ -10,11 +10,13 @@ public class MoldeRestaurantes implements Serializable {
     private  String platoRecomendado;
     private String comentario;
     private  String valoracion;
+    private  Integer imagenr;
+
 
     public MoldeRestaurantes() {
     }
 
-    public MoldeRestaurantes(String nombre, Integer foto, String telefono, String rangoPrecio, String platoRecomendado, String comentario, String valoracion) {
+    public MoldeRestaurantes(String nombre, Integer foto, String telefono, String rangoPrecio, String platoRecomendado, String comentario, String valoracion, Integer imagenr) {
         this.nombre = nombre;
         this.foto = foto;
         this.telefono = telefono;
@@ -22,6 +24,15 @@ public class MoldeRestaurantes implements Serializable {
         this.platoRecomendado = platoRecomendado;
         this.comentario = comentario;
         this.valoracion = valoracion;
+        this.imagenr = imagenr;
+    }
+
+    public Integer getImagenr() {
+        return imagenr;
+    }
+
+    public void setImagenr(Integer imagenr) {
+        this.imagenr = imagenr;
     }
 
     public String getComentario() {

@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/imagenAmpliandoHotel"
-        android:layout_width="270dp"
-        android:layout_height="277dp"
+        android:layout_width="191dp"
+        android:layout_height="213dp"
         android:background="@drawable/hoteluno"
         android:scaleType="fitXY"
         android:src="@drawable/imagen_personalizada"
@@ -70,16 +70,16 @@
 
     <TextView
         android:id="@+id/descripcionH"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="416dp"
+        android:layout_height="59dp"
         android:text="Lorem ipsum dolor   ac dui. Donec nec egestas dolor, eget ultricies orci. Proin hendrerit magna eu consequat vehicula. Nunc euismod arcu nec ante elementum, ac dignissim massa viverra. Morbi rhoncus metus odio, dapibus imperdiet mauris ultricies id. Quisque bibendum turpis sit amet varius interdum. Duis metus nisi, auctor vehicula cursus eget, ornare scelerisque arcu. Maecenas eu nisl sit amet ipsum laoreet dapibus. Maecenas tempor eleifend congue."
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagenAmpliandoHotel"
-        app:layout_constraintVertical_bias="0.510" />
+        app:layout_constraintVertical_bias="0.351" />
 
     <Button
         android:id="@+id/botonhoteles"
@@ -92,9 +92,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imagenAmpliandoHotel"
-        app:layout_constraintVertical_bias="0.712" />
+        app:layout_constraintVertical_bias="0.751" />
 
     <TextView
         android:id="@+id/valoracionHotel"
@@ -109,5 +110,19 @@
         app:layout_constraintTop_toBottomOf="@id/imagenAmpliandoHotel"
 
         app:layout_constraintVertical_bias="0.282" />
+
+    <ImageView
+        android:id="@+id/imagenampliandohotel"
+        android:layout_width="160dp"
+        android:layout_height="125dp"
+        android:background="@drawable/hotellistatres"
+        android:scaleType="fitXY"
+        android:src="@drawable/imagen_personalizada"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752" />
 
 </android.support.constraint.ConstraintLayout>

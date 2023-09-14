@@ -15,7 +15,7 @@ public class AmpliandoRestaurantes extends AppCompatActivity {
     TextView precioAmpliandoRestaurantes;
     TextView telefonoAmpliandoRestaurantes;
     TextView comentario;
-
+    ImageView fotoampliandorestaurante;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class AmpliandoRestaurantes extends AppCompatActivity {
         precioAmpliandoRestaurantes = findViewById(R.id.precioRestauranteA);
         telefonoAmpliandoRestaurantes = findViewById(R.id.telefonoRestauranteA);
         comentario = findViewById(R.id.comentario);
+        fotoampliandorestaurante = findViewById(R.id.imagenampliandorestaurantes);
 
         moldeRestaurantes = (MoldeRestaurantes)getIntent().getSerializableExtra("datosrestaurantes");
 
@@ -35,5 +36,6 @@ public class AmpliandoRestaurantes extends AppCompatActivity {
         precioAmpliandoRestaurantes.setText(moldeRestaurantes.getRangoPrecio());
         telefonoAmpliandoRestaurantes.setText(moldeRestaurantes.getTelefono());
         comentario.setText(moldeRestaurantes.getComentario());
+        fotoampliandorestaurante.setImageResource(moldeRestaurantes.getImagenr());
     }
 }

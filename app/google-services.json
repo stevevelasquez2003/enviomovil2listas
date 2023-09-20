@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "488674708951",
+    "project_id": "turistiandosav",
+    "storage_bucket": "turistiandosav.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488674708951:android:ee29319c13e283924ecf92",
+        "android_client_info": {
+          "package_name": "com.example.puebliando1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjBiwUov48nDVCp_ex_z-j8C7tZ0nBMGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,11 +1,17 @@
 package com.example.puebliando1;
 
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.puebliando1.moldes.Moldehotel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -15,6 +21,7 @@ public class Listahoteles extends AppCompatActivity {
     ArrayList<Moldehotel> listaHoteles = new ArrayList<>();
 
     RecyclerView recyclerView;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +30,27 @@ public class Listahoteles extends AppCompatActivity {
         recyclerView = findViewById(R.id.listadinamicahoteles);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
+        db.collection("users")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                String nombreHotel=document.getString("nombre");
+                                String precioHotel =document.getString("precio");
+                            }
+                        } else {
+
+                        }
+                    }
+                });
+
         llenarListaConDatos();
         AdaptadorHoteles adaptadorHoteles = new AdaptadorHoteles(listaHoteles);
         recyclerView.setAdapter(adaptadorHoteles);
     }
+
 
     private void llenarListaConDatos() {
         listaHoteles.add(new Moldehotel("HOTEL LA PALMA","$155000","251648932",R.drawable.hoteluno,"hotel espectacular","3.0",R.drawable.hoteldos,R.drawable.hotellistatres));

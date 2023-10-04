@@ -1,11 +1,18 @@
 package com.example.puebliando1;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.example.puebliando1.moldes.MoldeRestaurantes;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -15,6 +22,7 @@ import adaptadores.AdaptadorRestaurantes;
 public class ListaRestaurantes extends AppCompatActivity {
     ArrayList<MoldeRestaurantes> listaRestaurantes = new ArrayList<>();
     RecyclerView recyclerView;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +30,31 @@ public class ListaRestaurantes extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.listadinamicarestaurantes);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL,false));
+
+        db.collection("restaurantes")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                String nombreRestaurante=document.getString("nombre");
+                                String rangoPrecio =document.getString("precio");
+                                String telefonoRestaurante = document.getString("telefono");
+                                String platoRecomendado = document.getString("plato recomendado");
+
+                                Toast.makeText(ListaRestaurantes.this, nombreRestaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurantes.this, rangoPrecio, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurantes.this, telefonoRestaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurantes.this, platoRecomendado, Toast.LENGTH_SHORT).show();
+
+
+                            }
+                        } else {
+
+                        }
+                    }
+                });
 
         llenarListaConDatos();
         AdaptadorRestaurantes adaptadorRestaurantes = new AdaptadorRestaurantes(listaRestaurantes);

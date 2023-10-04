@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.example.puebliando1.moldes.Moldehotel;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -30,7 +31,7 @@ public class Listahoteles extends AppCompatActivity {
         recyclerView = findViewById(R.id.listadinamicahoteles);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
-        db.collection("users")
+        db.collection("hoteles")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -39,6 +40,13 @@ public class Listahoteles extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 String nombreHotel=document.getString("nombre");
                                 String precioHotel =document.getString("precio");
+                                String telefonoHotel = document.getString("telefono");
+                                String descripcionHotel = document.getString("descripcion");
+                                Toast.makeText(Listahoteles.this, nombreHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Listahoteles.this, precioHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Listahoteles.this, telefonoHotel, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Listahoteles.this, descripcionHotel, Toast.LENGTH_SHORT).show();
+
                             }
                         } else {
 
